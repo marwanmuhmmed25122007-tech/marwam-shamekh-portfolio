@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MarwanShamekh | Front-End Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">MARWAN <span>SHAMEKH</span></a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Hi, I'm a Front-End<br>Developer</h1>
+        <p>I design and build clean, responsive websites with a focus on user experience and modern web technologies.
+          Welcome to my portfolio!</p>
+      </div>
+  </section>
+
+  <!--  ABOUT  -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-img-wrap">
+          <img src="images/photo_2026-02-23_13-12-09.jpg" alt="About illustration" />
+        </div>
+        <p class="about-text">
+          I'm a passionate front-end developer and computer science student who loves turning ideas into interactive,
+          accessible web experiences. I enjoy working with HTML, CSS, and JavaScript to create clean, user-friendly
+          interfaces. When I'm not coding, you can find me exploring open-source projects, attending tech meetups, or
+          reading about the latest in web development.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="section-container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-skill="HTML"
+          data-desc="HTML is the standard markup language for creating web pages. It structures the content and meaning of the web, forming the backbone of every website.">
+          <i class="fab fa-html5 skill-icon html-icon"></i>
+          <span>HTML</span>
+        </div>
+
+        <div class="skill-card" data-skill="CSS"
+          data-desc="CSS is used to style and layout web pages. It controls colors, fonts, spacing, and responsiveness, making websites visually appealing.">
+          <i class="fab fa-css3-alt skill-icon css-icon"></i>
+          <span>CSS</span>
+        </div>
+
+        <div class="skill-card" data-skill="JavaScript"
+          data-desc="JavaScript adds interactivity to websites. It allows developers to respond to user actions, manipulate the DOM, validate forms, and create dynamic content.">
+          <i class="fab fa-js skill-icon js-icon"></i>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="skill-card" data-skill="Git"
+          data-desc="Git is a distributed version control system that helps developers track changes, collaborate with teams, and manage project history efficiently.">
+          <i class="fab fa-git-alt skill-icon git-icon"></i>
+          <span>Git</span>
+        </div>
+
+        <div class="skill-card" data-skill="Responsive Design"
+          data-desc="Responsive design ensures websites look and work great on all screen sizes, from mobile phones to large desktop monitors.">
+          <i class="fas fa-mobile-alt skill-icon resp-icon"></i>
+          <span>Responsive Design</span>
+        </div>
+
+        <div class="skill-card" data-skill="DOM Manipulation"
+          data-desc="DOM Manipulation refers to using JavaScript to dynamically change the structure, style, or content of a webpage after it has loaded.">
+          <i class="fas fa-code skill-icon dom-icon"></i>
+          <span>DOM Manipulation</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILL MODAL -->
+  <div class="modal-overlay" id="skillModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-icon-wrap" id="modalIcon"></div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-desc" id="modalDesc"></p>
+    </div>
+  </div>
+
+  <!--  CONTACT  -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-form-wrap">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" />
+          <span class="error-msg" id="nameErr"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+          <span class="error-msg" id="emailErr"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="6" placeholder="Write your message here..."></textarea>
+          <span class="error-msg" id="msgErr"></span>
+        </div>
+        <button class="btn btn-primary btn-full" id="sendBtn">Send Message</button>
+        <div class="success-msg" id="successMsg">✅ Your message has been sent successfully!</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER  -->
+  <footer class="footer">
+    <div class="footer-icons">
+      <a href="https://github.com/marwanmuhmmed25122007-tech" target="_blank" aria-label="GitHub"><i
+          class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/marwan-muhmmed-b1b2403a6/" target="_blank" aria-label="LinkedIn"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100026250996480" target="_blank" aria-label="Facebook"><i
+          class="fa-brands fa-facebook""></i></i></a>
+    </div>
+    <p>© 2026 Marwan Shamekh. All rights reserved.</p>
+  </footer>
+
+  <script src=" script.js"></script>
+</body>
+
+</html>
