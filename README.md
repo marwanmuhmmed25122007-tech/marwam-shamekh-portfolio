@@ -5,7 +5,6 @@ A responsive portfolio website built using HTML, CSS, and JavaScript.
 - Responsive Design
 - About Section
 - Skills Section
-- Projects Section
 - Contact Form
 
 ## Technologies Used
